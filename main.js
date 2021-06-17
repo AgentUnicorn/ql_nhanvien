@@ -1,5 +1,7 @@
 //khởi tạo mảng chứa các obj nv 
 let memberList = [];
+json = JSON.stringify(memberList);
+localStorage.setItem('memberList', json);
 
 //lấy data từ localStorage và chuyển từ dạng String -> JSON
 json = localStorage.getItem('memberList');
@@ -88,7 +90,7 @@ let addMember = () => {
     //chuyển memberList đang ở dạnh JSON thành dạng String
     //và lưu vào localStorage
     json = JSON.stringify(memberList);
-    localStorage.setItem('memberList', json)
+    localStorage.setItem('memberList', json);
 
 }
 //end function addMemer
